@@ -30,7 +30,10 @@ public class Main {
 			System.out.println("2. RESTAR");
 			System.out.println("3. MULTIPLICAR");
 			System.out.println("4. DIVIDIR");
-			System.out.println("5. SALIR");
+			System.out.println("5. CUADRADO");
+			System.out.println("6. POTENCIACION");
+			System.out.println("7. RAIZ");
+			System.out.println("8. SALIR");
 			System.out.println("Ingrese Opcion a ejecutar: ");
 			operar = Integer.parseInt(br.readLine());
 			// Logica del programa
@@ -50,7 +53,22 @@ public class Main {
 				int divi = num1 / num2;
 				System.out.println("El resultado de la division es: " + divi);
 							}
-			if(operar == 5){ System.out.println("ADIOS"); }
+			if(operar == 5){
+				int cuad1 = num1 * num1;
+				int cuad2 = num2 * num2;
+				System.out.println("El resultado de la operacion para el primer numero es: " + cuad1);
+				System.out.println("El resultado de la operacion para el segundo numero es: " + cuad2);
+							}
+			if(operar == 6){
+				int pot = (int) Math.pow(num1, num2);
+				System.out.println("El resultado de la potenciacion es: " + pot);
+							}
+			if(operar == 7){
+				int raiz = (int) Math.pow(num1, (1/num2));
+				System.out.println("El resultado de la raiz es: " + raiz);
+							}
+			
+			if(operar == 8){ System.out.println("ADIOS"); }
 			System.out.println("");
 			}while(operar != 5);
 		}
